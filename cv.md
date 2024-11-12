@@ -56,3 +56,8 @@ function isPalindrome(str) {
   - [Udemy, HTML/CSS](https://www.udemy.com/course/webdeveloper/)
   - [Udemy, JavaScript](https://www.udemy.com/course/javascript_full/)
   - [YLab, React](https://learning-platform.ylab.website)
+
+## Languages
+
+- **Russian** - native
+- **English** - B1
