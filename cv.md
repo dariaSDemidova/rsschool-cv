@@ -14,6 +14,9 @@
 # About Me
 
 👩🏻‍💻 I am a frontend developer a higher medical education, passionate about creating beautiful and functional web interfaces.
+
 💻 In my work, I strive for professional growth and constantly look for new opportunities for development.
+
 🛠️ I came to frontend development to bring cool ideas to life and improve the user experience as much as possible.
+
 🎨 I believe in the importance of design and functionality, and always strive to create intuitive interfaces that give users a pleasure to interact with the product.
