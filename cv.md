@@ -11,7 +11,7 @@
 - **GitHub:** [dariaSDemidova](https://github.com/dariaSDemidova)
 - **Telegram** [Daria Demidova](https://t.me/demi_dari)
 
-# About Me
+## About Me
 
 👩🏻‍💻 I am a frontend developer a higher medical education, passionate about creating beautiful and functional web interfaces.
 
@@ -20,3 +20,16 @@
 🛠️ I came to frontend development to bring cool ideas to life and improve the user experience as much as possible.
 
 🎨 I believe in the importance of design and functionality, and always strive to create intuitive interfaces that give users a pleasure to interact with the product.
+
+## Skills
+
+- HTML
+- Pug
+- CSS
+- Tailwind CSS
+- Bootstrap
+- Sass
+- JavaScript
+- React
+- Vue
+- Git/GitHub
