@@ -46,3 +46,13 @@ function isPalindrome(str) {
     return cleanedStr === reversedStr;
 }
 ```
+
+## Education
+
+- **University**
+  - NSMU, Ophthalmology
+- **Courses**
+  - [Stepik, Web-development](https://stepik.org)
+  - [Udemy, HTML/CSS](https://www.udemy.com/course/webdeveloper/)
+  - [Udemy, JavaScript](https://www.udemy.com/course/javascript_full/)
+  - [YLab, React](https://learning-platform.ylab.website)
