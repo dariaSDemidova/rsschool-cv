@@ -1,0 +1,453 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #292d2d;
+    --gray-color: #737373;
+    --beige-color: #dfd7d3;
+    --brown-color: #b37f56;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gray-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.cv {
+    display: flex;
+    max-width: 1280px;
+    margin: 40px auto;
+    position: relative;
+    background-color: var(--white-color);
+}
+
+.cv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: var(--beige-color);
+}
+
+.left__container {
+    border: 2px solid var(--black-color);
+    margin: 35px 25px;
+    padding: 25px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.left__info {
+    display: none;
+}
+
+.photo {
+    width: 300px;
+    height: auto;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts__item {
+    list-style-type: none;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts__item {
+    list-style-type: none;
+}
+
+.contacts__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--beige-color);
+    width: 30px;
+    height: 30px;
+}
+
+.contacts__icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.contacts__link:hover {
+    text-decoration: underline;
+}
+
+.contacts__link:hover .contacts__icon {
+    background-color: var(--gray-color);
+}
+
+.education__title,
+.skills__title,
+.languages__title {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.28px;
+    color: var(--black-color);
+}
+
+.education__title::before,
+.skills__title::before,
+.languages__title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 0;
+    bottom: 0;
+    background-color: var(--beige-color);
+    z-index: -1;
+}
+
+.education__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education__position {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.28px;
+    color: var(--black-color);
+}
+
+.education__text {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.28px;
+    color: var(--gray-color);
+}
+
+.education__date {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: var(--gray-color);
+    text-decoration: none;
+}
+
+.skills__list,
+.languages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.skills__item,
+.languages__item {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.28px;
+    color: var(--black-color);
+}
+
+.right__container {
+    margin: 100px 25px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 5.76px;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.position {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1.28px;
+    color: var(--black-color);
+}
+
+.summary__title,
+.experience__title,
+.projects__title {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.28px;
+    color: var(--black-color);
+}
+
+.summary__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/icons/person.svg) no-repeat center center;
+    background-size: contain;
+    transform: translateY(-50%);
+}
+
+.experience__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/icons/job.svg) no-repeat center center;
+    background-size: contain;
+    transform: translateY(-50%);
+}
+
+.projects__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/icons/laptop.svg) no-repeat center center;
+    background-size: contain;
+    transform: translateY(-50%);
+}
+
+.summary__text {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.28px;
+    color: var(--gray-color);
+}
+
+.experience__job {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.experience__job-date {
+    width: 150px;
+    margin-right: 20px;
+    padding-top: 5px;
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: var(--black-color);
+    text-align: right;
+}
+
+.experience__job-info {
+    padding-left: 20px;
+    flex-grow: 1;
+    border-left: 2px solid var(--brown-color);
+}
+
+.experience__job-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.28px;
+    color: var(--black-color);
+}
+
+.experience__job-position {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.28px;
+    color: var(--gray-color);
+    margin-bottom: 10px;
+}
+
+.experience__job-responsibilities {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experience__job-responsibility {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: var(--black-color);
+}
+
+.projects__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    list-style-type: none;
+}
+
+.projects__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.projects__link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.projects__image {
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+    flex-shrink: 0;
+}
+
+.projects__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    position: relative;
+    padding-top: 10px;
+}
+
+.projects__name {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.28px;
+    color: var(--black-color);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.projects__info:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 2px;
+    background-color: var(--beige-color);
+    transition: all 0.3s ease;
+}
+
+.projects__technologies img {
+    width: 30px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.projects__item:hover .projects__image {
+    box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.projects__item:hover .projects__info:after {
+    width: 100%;
+    background-color: var(--brown-color);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .cv {
+        max-width: 100%;
+        margin: 0;
+    }
+    .left__container {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cv::before {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cv {
+        flex-direction: column;
+    }
+    .cv::before {
+        height: 150px;
+    }
+    .left__container {
+        margin-right: 25px;
+    }
+    .left__info {
+        display: flex;
+        flex-direction: column;
+    }
+    .photo {
+        margin: 0 auto;
+    }
+    .right__container {
+        margin-top: 0;
+    }
+    .info {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .photo {
+        width: 250px;
+    }
+    .experience__job {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cv::before {
+        height: 130px;
+    }
+    .left__container {
+        border: 2px solid var(--black-color);
+        margin: 25px 15px;
+        padding: 10px;
+    }
+    .photo {
+        width: 200px;
+    }
+    .projects__list {
+        grid-template-columns: 1fr;
+    }
+}
