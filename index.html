@@ -176,6 +176,18 @@
                     </div>
                 </div>
             </section>
+            <section class="code">
+                <h2 class="code__title">Code Example</h2>
+                <pre>
+                    <code>
+                        function isPalindrome(str) {
+                            let cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+                            let reversedStr = cleanedStr.split("").reverse().join("");
+                        
+                            return cleanedStr === reversedStr;
+                        }
+                    </code></pre>
+            </section>
             <section class="projects" id="projects">
                 <h2 class="projects__title">Projects</h2>
                 <ul class="projects__list">
