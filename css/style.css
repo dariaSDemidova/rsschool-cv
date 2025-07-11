@@ -20,7 +20,7 @@ body {
 .cv {
     display: flex;
     max-width: 1280px;
-    margin: 40px auto;
+    margin: 0 auto;
     position: relative;
     background-color: var(--white-color);
 }
@@ -385,12 +385,44 @@ body {
     background-color: var(--brown-color);
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    max-width: 1280px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: var(--beige-color);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.28px;
+    color: var(--black-color);
+}
+
+.footer__github {
+    height: 30px;
+    aspect-ratio: 1 / 1;
+}
+
+.footer__rsschool {
+    height: 30px;
+    width: auto;
+}
+
+.footer__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 @media screen and (max-width: 1024px) {
     .cv {
         max-width: 100%;
         margin: 0;
     }
+
     .left__container {
         margin-right: 0;
     }
@@ -406,22 +438,28 @@ body {
     .cv {
         flex-direction: column;
     }
+
     .cv::before {
         height: 150px;
     }
+
     .left__container {
         margin-right: 25px;
     }
+
     .left__info {
         display: flex;
         flex-direction: column;
     }
+
     .photo {
         margin: 0 auto;
     }
+
     .right__container {
         margin-top: 0;
     }
+
     .info {
         display: none;
     }
@@ -431,6 +469,7 @@ body {
     .photo {
         width: 250px;
     }
+
     .experience__job {
         flex-direction: column;
     }
@@ -440,14 +479,17 @@ body {
     .cv::before {
         height: 130px;
     }
+
     .left__container {
         border: 2px solid var(--black-color);
         margin: 25px 15px;
         padding: 10px;
     }
+
     .photo {
         width: 200px;
     }
+
     .projects__list {
         grid-template-columns: 1fr;
     }
