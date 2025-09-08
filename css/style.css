@@ -21,39 +21,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.header {
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-top: 40px;
-    padding: 25px;
-    background-color: var(--black-color);
-}
-
-.header__nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: end;
-    gap: 60px;
-    list-style: none;
-}
-
-.header__nav-link {
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 1.28px;
-    color: var(--white-color);
-    text-decoration: none;
-}
-
-.header__nav-link:hover {
-    text-decoration: underline;
-}
-
 .cv {
     display: flex;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 40px auto;
     position: relative;
     background-color: var(--white-color);
 }
@@ -241,7 +212,6 @@ body {
 
 .summary__title,
 .experience__title,
-.code__title,
 .projects__title {
     position: relative;
     padding-left: 30px;
@@ -276,18 +246,6 @@ body {
     transform: translateY(-50%);
 }
 
-.code__title::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: url(../assets/icons/code.svg) no-repeat center center;
-    background-size: contain;
-    transform: translateY(-50%);
-}
-
 .projects__title::before {
     content: "";
     position: absolute;
@@ -313,7 +271,7 @@ body {
 }
 
 .experience__job-date {
-    width: 150px;
+    width: 120px;
     margin-right: 20px;
     padding-top: 5px;
     flex-shrink: 0;
@@ -321,7 +279,6 @@ body {
     font-weight: 600;
     letter-spacing: 0.6px;
     color: var(--black-color);
-    text-align: right;
 }
 
 .experience__job-info {
@@ -431,42 +388,7 @@ body {
     background-color: var(--brown-color);
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    max-width: 1280px;
-    margin: auto;
-    margin-bottom: 40px;
-    background-color: var(--beige-color);
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 1.28px;
-    color: var(--black-color);
-}
-
-.footer__github {
-    height: 30px;
-    aspect-ratio: 1 / 1;
-}
-
-.footer__rsschool {
-    height: 30px;
-    width: auto;
-}
-
-.footer__img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
 @media screen and (max-width: 1024px) {
-    .header {
-        margin-top: 0;
-    }
 
     .cv {
         max-width: 100%;
@@ -476,17 +398,9 @@ body {
     .left__container {
         margin-right: 0;
     }
-
-    .footer {
-        margin-bottom: 0;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .header__nav-list {
-        justify-content: space-between;
-        gap: 0;
-    }
 
     .cv {
         flex-direction: column;
@@ -525,6 +439,10 @@ body {
 
     .experience__job {
         flex-direction: column;
+    }
+
+    .experience__job-date {
+        width: 100%;
     }
 }
 

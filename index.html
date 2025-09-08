@@ -15,15 +15,6 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li><a class="header__nav-link" href="#skills">Skills</a></li>
-                <li><a class="header__nav-link" href="#projects">Projects</a></li>
-                <li><a class="header__nav-link" href="#education">Education</a></li>
-            </ul>
-        </nav>
-    </header>
     <main class="cv">
         <div class="left__container">
             <div class="left__info">
@@ -49,6 +40,15 @@
                                 <img src="./assets/icons/mail.svg" alt="mail">
                             </span>
                             demidova.daris@gmail.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="https://www.linkedin.com/in/daria-demidova-74b6402b7/"
+                            target="_blank">
+                            <span class="contacts__icon">
+                                <img src="./assets/icons/linkedin.svg" alt="linkedin">
+                            </span>
+                            linkedin
                         </a>
                     </li>
                     <li class="contacts__item">
@@ -117,6 +117,7 @@
                     <li class="skills__item">React</li>
                     <li class="skills__item">Vue</li>
                     <li class="skills__item">Git/GitHub</li>
+                    <li class="skills__item">Wordpress</li>
                 </ul>
             </section>
             <section class="languages">
@@ -145,48 +146,52 @@
             <section class="experience">
                 <h2 class="experience__title">Experience</h2>
                 <div class="experience__job">
-                    <p class="experience__job-date">august 2023 - present</p>
+                    <p class="experience__job-date">november 2024 - present</p>
                     <div class="experience__job-info">
-                        <h3 class="experience__job-title">Project work</h3>
+                        <h3 class="experience__job-title">M.AI</h3>
                         <h4 class="experience__job-position">Frontend developer</h4>
                         <ul class="experience__job-responsibilities">
-                            <li class="experience__job-responsibility">adaptive and cross-browser layout using the BEM
-                                methodology</li>
-                            <li class="experience__job-responsibility">implementation of site functionality in JS</li>
-                            <li class="experience__job-responsibility">writing user interface components in JSX</li>
+                            <li class="experience__job-responsibility">built responsive websites from Figma designs and
+                                integrated them into 1C-Bitrix</li>
+                            <li class="experience__job-responsibility">implemented CSS/JS animations and performed
+                                cross-browser testing</li>
                         </ul>
                     </div>
                 </div>
                 <div class="experience__job">
-                    <p class="experience__job-date">april 2024 - june 2024</p>
+                    <p class="experience__job-date">april 2023 - present</p>
                     <div class="experience__job-info">
-                        <h3 class="experience__job-title">Internship</h3>
+                        <h3 class="experience__job-title">Project work</h3>
                         <h4 class="experience__job-position">Frontend developer</h4>
                         <ul class="experience__job-responsibilities">
-                            <li class="experience__job-responsibility">worked in a team of developers using the Agile
-                                methodology</li>
-                            <li class="experience__job-responsibility">implemented adaptive and cross-browser layout
-                                using a Figma layout</li>
-                            <li class="experience__job-responsibility">implemented the functionality of the site in JS,
-                                namely: worked with modal windows, a
-                                form
-                                and its validation, as well as on compiling practical tasks in HTML and their validation
+                            <li class="experience__job-responsibility">developed functional React components and
+                                implemented state management with MobX and Context API</li>
+                            <li class="experience__job-responsibility">integrated APIs, built responsive websites, and
+                                created interactive training tools</li>
+                            <li class="experience__job-responsibility">developed a flashcard-based word learning feature
+                                with progress tracking</li>
+                            <li class="experience__job-responsibility">designed layouts in Figma and made adjustments
+                                according to client requirements</li>
+                            <li class="experience__job-responsibility">participated in team development following Agile
+                                methodology and worked with Git</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience__job">
+                    <p class="experience__job-date">september 2024 - march 2025</p>
+                    <div class="experience__job-info">
+                        <h3 class="experience__job-title">Internship 5d hub</h3>
+                        <h4 class="experience__job-position">Frontend developer</h4>
+                        <ul class="experience__job-responsibilities">
+                            <li class="experience__job-responsibility">developed functional components using Next.js +
+                                TypeScript</li>
+                            <li class="experience__job-responsibility">implemented i18n for multilingual support</li>
+                            <li class="experience__job-responsibility">integrated with Google Sheets for data exchange
                             </li>
                         </ul>
                     </div>
                 </div>
-            </section>
-            <section class="code">
-                <h2 class="code__title">Code Example</h2>
-                <pre>
-                    <code>
-                        function isPalindrome(str) {
-                            let cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
-                            let reversedStr = cleanedStr.split("").reverse().join("");
-                        
-                            return cleanedStr === reversedStr;
-                        }
-                    </code></pre>
             </section>
             <section class="projects" id="projects">
                 <h2 class="projects__title">Projects</h2>
@@ -303,17 +308,6 @@
             </section>
         </div>
     </main>
-
-
-    <footer class="footer">
-        <a class="footer__github" href="https://github.com/dariaSDemidova">
-            <img class="footer__img" src="./assets/icons/github.svg" alt="github">
-        </a>
-        <p>© 2025</p>
-        <a class="footer__rsschool" href="https://rs.school/courses/javascript-ru">
-            <img class="footer__img" src="./assets/icons/rsschool.svg" alt="rsschool">
-        </a>
-    </footer>
 </body>
 
 </html>
