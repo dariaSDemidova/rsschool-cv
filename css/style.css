@@ -271,7 +271,7 @@ body {
 }
 
 .experience__job-date {
-    width: 150px;
+    width: 120px;
     margin-right: 20px;
     padding-top: 5px;
     flex-shrink: 0;
@@ -279,7 +279,6 @@ body {
     font-weight: 600;
     letter-spacing: 0.6px;
     color: var(--black-color);
-    text-align: right;
 }
 
 .experience__job-info {
@@ -440,6 +439,10 @@ body {
 
     .experience__job {
         flex-direction: column;
+    }
+
+    .experience__job-date {
+        width: 100%;
     }
 }
 
